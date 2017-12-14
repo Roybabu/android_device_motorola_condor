@@ -17,6 +17,8 @@
 # inherit from common msm8610-common
 -include device/motorola/msm8610-common/BoardConfigCommon.mk
 
+-include vendor/motorola/condor/BoardConfigVendor.mk
+
 LOCAL_PATH := device/motorola/condor
 
 # Kernel
@@ -43,3 +45,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_condor
 
 BOARD_SEPOLICY_DIRS += \
     device/motorola/condor/sepolicy
+
+WITH_DEXPREOPT := true
+
+

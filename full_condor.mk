@@ -18,7 +18,7 @@
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from condor device
 $(call inherit-product, device/motorola/condor/device.mk)
