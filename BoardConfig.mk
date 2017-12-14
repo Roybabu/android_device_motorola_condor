@@ -46,6 +46,3 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_condor
 BOARD_SEPOLICY_DIRS += \
     device/motorola/condor/sepolicy
 
-WITH_DEXPREOPT := true
-
-
