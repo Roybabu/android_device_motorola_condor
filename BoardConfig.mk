@@ -17,8 +17,6 @@
 # inherit from common msm8610-common
 -include device/motorola/msm8610-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/motorola/condor
-
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_condor_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
@@ -32,7 +30,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 476184576
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.qcom
+TARGET_RECOVERY_FSTAB := /home/roy/carbon/device/motorola/condor/ramdisk/fstab.qcom
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := xt1021,xt1022,xt1023,condor_umts,condor_umtsds,condor
